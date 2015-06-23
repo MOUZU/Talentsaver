@@ -1,0 +1,9 @@
+## Interface: 11200
+## Title: Talentsaver
+## Version: 1.3
+## Notes: Save & Load your Talents easily with this AddOn. Originally created for ViroUI.
+## Author: Virose(LYQ) @ Feenix(wow-one.com)
+
+## SavedVariablesPerCharacter: TALENTS_SAVED
+
+Talentsaver.lua
