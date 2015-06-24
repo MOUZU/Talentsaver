@@ -3,12 +3,12 @@ With this World of Warcraft AddOn you can save your current Talent Specs and if 
 
 
 # Changelog
-> 1.3 (27. July 2014)
+ 1.3 (27. July 2014)
 - added the 'stop' command
 - completely remade the BUILD Variables and therefor saving&loading procedures
 - fixed the loading procedure if points are already spent
 
-> 1.2 (26. July 2014)
+ 1.2 (26. July 2014)
 - changed the Spec Info Variables from string to table with 4 int values(!)
 - deleting a spec will now completeley remove it from the LIST table and therefor the /list command
 - on loading it will display an estimated loading time
@@ -16,5 +16,5 @@ With this World of Warcraft AddOn you can save your current Talent Specs and if 
 --> it can now continue loading the template if you've already spent a few of the needed points correctly
 (if you've spent them on your own or the loading process got stopped due to dc)
 
-> 1.1 (22. July 2014)
+ 1.1 (22. July 2014)
 - fixed the delay variable (from s to ms)
