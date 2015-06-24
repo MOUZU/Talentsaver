@@ -1,6 +1,9 @@
 # Talentsaver
 With this World of Warcraft AddOn you can save your current Talent Specs and if you have to reset to switch to another spec you can easily let the AddOn load the saved template.
 
+<br \>
+<a href="https://github.com/MOUZU/Talentsaver/releases">Download latest Release</a>
+
 
 # Changelog
 1.3 (27. July 2014)
