@@ -6,7 +6,7 @@ It was initially created for my ViroUI pack but due to popular demand I released
 
 # Showcase
 <img src="http://oi62.tinypic.com/1492lur.jpg"></img>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8au61bMst10" frameborder="0" allowfullscreen></iframe>
+[![Talentsaver 1.4 Preview on Youtube](http://i.imgur.com/aNjG5bV.png)](https://www.youtube.com/embed/8au61bMst10 "Talentsaver 1.4 Preview on Youtube")
 
 # Download
 <br \>
