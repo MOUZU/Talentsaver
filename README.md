@@ -10,7 +10,7 @@ It was initially created for my ViroUI pack but due to popular demand I released
 
 # Download
 <br \>
-<a href="https://github.com/MOUZU/Talentsaver/releases">Download latest Release</a>
+<a href="https://github.com/MOUZU/Talentsaver/releases"><b>Download latest Release</b></a>
 
 # Chat Commands
 - /talentsaver /talents or /ts
