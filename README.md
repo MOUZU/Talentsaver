@@ -1,11 +1,33 @@
 # Talentsaver
 With this World of Warcraft AddOn you can save your current Talent Specs and if you have to reset to switch to another spec you can easily let the AddOn load the saved template.
 
+It was created for situations like during the raid, when you have to switch your spec for one Boss only so you don't have that much time and you don't want to look up your saved talent specs so you don't make mistakes while speccing in a hurry.
+It was initially created for my ViroUI pack but due to popular demand I released it independently.
+
+# Showcase
+<img src="http://oi62.tinypic.com/1492lur.jpg"></img>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8au61bMst10" frameborder="0" allowfullscreen></iframe>
+
+# Download
 <br \>
 <a href="https://github.com/MOUZU/Talentsaver/releases">Download latest Release</a>
 
+# Chat Commands
+- /talentsaver /talents or /ts
+- /talents save name - to save the current spec as 'name'
+- /talents load name - to load the template named 'name'
+- /talents delete name - to delete the template named 'name'
+- /talents list - to display a list of your saved Talent templates
+- /talents delay number - to change the delay. 'number' in ms (eg. 'delay 400' for 400ms delay)
+    Default Value is -1 which means the AddOn calculates the delay latency dependent (latency in ms/50*0.4)
+- /talents stop - will stop if a template is being loaded right now
 
 # Changelog
+1.4 (2. July 2015)
+ - added a FuBarPlugin for easier usage
+ - added a DoubleCheck (if the loading process is finished it will check if it's really finished, Lag Spikes could fail the process)
+ - overhauled load, save and delete functions as well as few other functions and variables
+
 1.3 (27. July 2014)
 - added the 'stop' command
 - completely remade the BUILD Variables and therefor saving&loading procedures
