@@ -1,9 +1,14 @@
 ## Interface: 11200
 ## Title: Talentsaver
-## Version: 1.3
+## Version: 1.4
 ## Notes: Save & Load your Talents easily with this AddOn. Originally created for ViroUI.
-## Author: MOUZU(LYQ/Virose) @ GitHub
+## Author: MOUZU (LYQ/Virose)
+## URL: https://github.com/MOUZU/Talentsaver
 
 ## SavedVariablesPerCharacter: TALENTS_SAVED
 
+libs\FuBarPlugin-2.0\FuBarPlugin-2.0.lua
+libs\Tablet-2.0\Tablet-2.0.lua
+
 Talentsaver.lua
+options.lua
