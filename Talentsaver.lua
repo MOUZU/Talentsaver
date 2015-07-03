@@ -1,4 +1,4 @@
-TALENTSAVER_VERSION = 1.4
+TALENTSAVER_VERSION = 1.41
 
 	-- INIT some vars, which are needed for the loading process
     local vars = {
