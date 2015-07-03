@@ -10,7 +10,11 @@ It was initially created for my ViroUI pack but due to popular demand I released
 
 # Download
 <br \>
-<a href="https://github.com/MOUZU/Talentsaver/releases">Download latest Release</a>
+<a href="https://github.com/MOUZU/Talentsaver/releases"><b>Download latest Release</b></a>
+
+# Discussion
+<a href="http://www.wow-one.com/forum/topic/82768-talentsaver/"><b>Feenix Forum Thread</b></a><br \>
+<a href="https://forum.nostalrius.org/viewtopic.php?f=63&t=15429"><b>Nostalrius Forum Thread</b></a>
 
 # Chat Commands
 - /talentsaver /talents or /ts
