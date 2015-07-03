@@ -9,7 +9,6 @@ It was initially created for my ViroUI pack but due to popular demand I released
 [![Talentsaver 1.4 Preview on Youtube](http://i.imgur.com/aNjG5bV.png)](https://www.youtube.com/watch?v=8au61bMst10 "Talentsaver 1.4 Preview on Youtube")
 
 # Download
-<br \>
 <a href="https://github.com/MOUZU/Talentsaver/releases"><b>Download latest Release</b></a>
 
 # Discussion
