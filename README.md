@@ -9,11 +9,8 @@ It was initially created for my ViroUI pack but due to popular demand I released
 [![Talentsaver 1.4 Preview on Youtube](http://i.imgur.com/aNjG5bV.png)](https://www.youtube.com/watch?v=8au61bMst10 "Talentsaver 1.4 Preview on Youtube")
 
 # Download
-<a href="https://github.com/MOUZU/Talentsaver/releases"><b>Download latest Release</b></a>
-
-# Discussion
-<a href="http://www.wow-one.com/forum/topic/82768-talentsaver/"><b>Feenix Forum Thread</b></a><br \>
-<a href="https://forum.nostalrius.org/viewtopic.php?f=63&t=15429"><b>Nostalrius Forum Thread</b></a>
+<br \>
+<a href="https://github.com/MOUZU/Talentsaver/releases">Download latest Release</a>
 
 # Chat Commands
 - /talentsaver /talents or /ts
@@ -26,6 +23,10 @@ It was initially created for my ViroUI pack but due to popular demand I released
 - /talents stop - will stop if a template is being loaded right now
 
 # Changelog
+1.41 (3. July 2015)
+ - fixed the DoubleCheck process (delayed it)
+ - the estimated loading value will now be increased by 2s to make it more accurate
+
 1.4 (2. July 2015)
  - added a FuBarPlugin for easier usage
  - added a DoubleCheck (if the loading process is finished it will check if it's really finished, Lag Spikes could fail the process)

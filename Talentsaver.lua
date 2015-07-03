@@ -4,6 +4,7 @@ TALENTSAVER_VERSION = 1.4
     local vars = {
             isLoading = false,
             firstCall = true,
+            isFinished = false,
             
             Name = nil,     -- current Build Name to load
             tab = 1,        -- current Tree
@@ -216,8 +217,10 @@ function DoubleCheck(name)
             elseif spent < TALENTS_SAVED["BUILDS"][name][tree][talent] then
                 -- we found missing points in a talent
                 vars.isLoading = true
+                vars.isFinished = false
                 vars.tab = tree
                 vars.int = talent
+                vars.lastLoad = GetTime()
                 return false
             end
         end
@@ -233,6 +236,7 @@ function Increment()
 end
 function ResetVars()
     vars.isLoading = false
+    vars.isFinished = false
     vars.int = 1
 	vars.tab = 1
 	vars.Name = nil
@@ -271,7 +275,7 @@ Talentsaver:SetScript('OnUpdate', function()
 			-- calculate and format the estimated loading time
 			local pointsleft = TALENTS_SAVED["INFO"][vars.Name][4] - first - second - third
 			local estimate = ""
-			local timeleft = pointsleft * delay
+			local timeleft = pointsleft * delay + 2 -- +2s to make it more accurate
 			if timeleft > 60 then
 				local minutes = math.floor(timeleft/60)
 				local seconds = math.floor(timeleft - (minutes*60))
@@ -285,24 +289,26 @@ Talentsaver:SetScript('OnUpdate', function()
 		end
             -- ====== LOADING ====== --
 		if ((vars.lastLoad+delay) <= GetTime()) then
-			local _, _, _, _, spent = GetTalentInfo(vars.tab,vars.int)
-			if spent < TALENTS_SAVED["BUILDS"][vars.Name][vars.tab][vars.int] then
-				LearnTalent(vars.tab,vars.int)
-				if spent == TALENTS_SAVED["BUILDS"][vars.Name][vars.tab][vars.int] then
-					Increment()
-				end
-				vars.lastLoad = GetTime()
-			else
-				Increment()
-				vars.lastLoad = GetTime()-(delay+1)
-			end
-			if vars.tab == 3 and vars.int == GetNumTalents(vars.tab) then
+            if vars.isFinished then
                 if DoubleCheck(vars.Name) then
                     -- The process seems to be finished
 				    SendMSG("|cff3be7ed[Talentsaver]|r - Template '"..vars.Name.."' has been loaded.")
 				    ResetVars()
                 end
-			end
+            else
+                local _, _, _, _, spent = GetTalentInfo(vars.tab,vars.int)
+                if spent < TALENTS_SAVED["BUILDS"][vars.Name][vars.tab][vars.int] then        -- there was somehow a bug attempt to index field ? a nil value
+                    LearnTalent(vars.tab,vars.int)
+                    if spent == TALENTS_SAVED["BUILDS"][vars.Name][vars.tab][vars.int] then
+                        Increment()
+                    end
+                    vars.lastLoad = GetTime()
+                else
+                    Increment()
+                    vars.lastLoad = GetTime()-(delay+1)
+                end
+                if vars.tab == 3 and vars.int == GetNumTalents(vars.tab) then vars.isFinished = true end
+            end
 		end
 	end
 end)
